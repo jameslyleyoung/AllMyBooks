@@ -13,6 +13,14 @@ namespace AllMyBooks.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
+            ViewBag.title = "My Books";
+            return View();
+        }
+
+        public IActionResult Add()
+        {
+            ViewBag.title = "Add a Book";
+            // TODO: Add functionality to Add a Book.
             return View();
         }
     }
